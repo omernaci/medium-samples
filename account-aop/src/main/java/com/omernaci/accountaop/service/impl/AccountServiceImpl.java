@@ -28,8 +28,8 @@ public class AccountServiceImpl implements AccountService {
         Account account = accountRepository.findByAccountNumber(accountNumber)
                 .orElseThrow(() -> new IllegalArgumentException("Invalid account number"));
         account.setBalance(account.getBalance().add(amount));
-        accountRepository.save(account);
-        return modelMapper.map(account, AccountDto.class);
+        Account savedAccount = accountRepository.save(account);
+        return modelMapper.map(savedAccount, AccountDto.class);
     }
 
     @Transactional
@@ -41,8 +41,8 @@ public class AccountServiceImpl implements AccountService {
             throw new IllegalArgumentException("Insufficient balance");
         }
         account.setBalance(account.getBalance().subtract(amount));
-        accountRepository.save(account);
-        return modelMapper.map(account, AccountDto.class);
+        Account savedAccount = accountRepository.save(account);
+        return modelMapper.map(savedAccount, AccountDto.class);
     }
 
     @Override

@@ -8,6 +8,9 @@ public class AccountDto {
     private String accountNumber;
     private BigDecimal balance;
 
+    public AccountDto() {
+    }
+
     public AccountDto(Long id, String accountNumber, BigDecimal balance) {
         this.id = id;
         this.accountNumber = accountNumber;
@@ -36,5 +39,14 @@ public class AccountDto {
 
     public void setBalance(BigDecimal balance) {
         this.balance = balance;
+    }
+
+    @Override
+    public String toString() {
+        return "AccountDto{" +
+                "id=" + id +
+                ", accountNumber='" + accountNumber + '\'' +
+                ", balance=" + balance +
+                '}';
     }
 }
