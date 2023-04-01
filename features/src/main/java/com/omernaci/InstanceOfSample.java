@@ -18,7 +18,6 @@ public class InstanceOfSample {
             System.out.println(a.hashCode());
         }
 
-
     }
 
 }
