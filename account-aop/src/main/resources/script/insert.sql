@@ -1,0 +1,10 @@
+INSERT INTO account (account_number, balance) VALUES ('A0000000001', 5000.00);
+INSERT INTO account (account_number, balance) VALUES ('A0000000002', 7500.00);
+INSERT INTO account (account_number, balance) VALUES ('A0000000003', 10000.00);
+INSERT INTO account (account_number, balance) VALUES ('A0000000004', 2500.00);
+INSERT INTO account (account_number, balance) VALUES ('A0000000005', 8000.00);
+INSERT INTO account (account_number, balance) VALUES ('A0000000006', 15000.00);
+INSERT INTO account (account_number, balance) VALUES ('A0000000007', 4000.00);
+INSERT INTO account (account_number, balance) VALUES ('A0000000008', 6000.00);
+INSERT INTO account (account_number, balance) VALUES ('A0000000009', 20000.00);
+INSERT INTO account (account_number, balance) VALUES ('A0000000010', 1000.00);
