@@ -7,3 +7,4 @@
 | A Guide to Intermediate and Terminal Operations with Java Streams | https://medium.com/@omernaci/a-guide-to-intermediate-and-terminal-operations-with-java-streams-b84a10147799 | *stream-exercise* |
 | Using BigDecimal in Java: Avoiding Common Pitfalls and Best Practices | https://medium.com/@omernaci/using-bigdecimal-in-java-avoiding-common-pitfalls-and-best-practices-99ad61364eb2 | *</>* |
 | Best Practices for Using @Transactional in Spring Boot | https://medium.com/@omernaci/best-practices-for-using-transactional-in-spring-boot-ff416146a0e7 | *</>* |
+| Implementing the Strategy Design Pattern in Java | https://medium.com/@omernaci/implementing-the-strategy-design-pattern-in-java-40a400a337dc | *strategy-example* |
