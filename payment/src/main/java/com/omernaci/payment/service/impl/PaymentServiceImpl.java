@@ -1,5 +1,8 @@
 package com.omernaci.payment.service.impl;
 
+import com.omernaci.payment.factory.PaymentFactory;
+import com.omernaci.payment.factory.PaymentProcessor;
+import com.omernaci.payment.factory.PaymentType;
 import com.omernaci.payment.persistence.entity.PaymentProjection;
 import com.omernaci.payment.persistence.entity.PaymentStatus;
 import com.omernaci.payment.persistence.repository.PaymentRepository;
@@ -17,6 +20,13 @@ public class PaymentServiceImpl implements PaymentService {
 
     public PaymentServiceImpl(PaymentRepository paymentRepository) {
         this.paymentRepository = paymentRepository;
+    }
+
+    @Override
+    public void processPayment(String orderId, PaymentType paymentType) {
+        PaymentProcessor paymentProcessor = PaymentFactory.createPaymentProcessor(paymentType);
+
+        paymentProcessor.processPayment(orderId);
     }
 
     @Override
