@@ -8,4 +8,5 @@
 | Using BigDecimal in Java: Avoiding Common Pitfalls and Best Practices | https://medium.com/@omernaci/using-bigdecimal-in-java-avoiding-common-pitfalls-and-best-practices-99ad61364eb2 | *</>* |
 | Best Practices for Using @Transactional in Spring Boot | https://medium.com/@omernaci/best-practices-for-using-transactional-in-spring-boot-ff416146a0e7 | *</>* |
 | Implementing the Strategy Design Pattern in Java | https://medium.com/@omernaci/implementing-the-strategy-design-pattern-in-java-40a400a337dc | *strategy-example* |
+| Java OOP : Commonly Asked Questions — 1 | [https://medium.com/@omernaci/implementing-the-strategy-design-pattern-in-java-40a400a337dc](https://medium.com/@omernaci/java-oop-commonly-asked-questions-1-46af9d9eb4d9) | [*java-oop*](https://javapulse.github.io/studious-adventure/#-4-java-oop) |
 | Mocking Static Classes with Mockito | [https://medium.com/@omernaci/implementing-the-strategy-design-pattern-in-java-40a400a337dc](https://medium.com/@omernaci/mocking-static-classes-with-mockito-7fc6fe54d4b0) | *payment* |
