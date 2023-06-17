@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC
+        "-//Checkstyle//DTD SuppressionFilter Configuration 1.3//EN"
+        "https://checkstyle.org/dtds/suppressions_1_3.dtd">
+<suppressions>
+    <!-- Exclude specific file -->
+    <suppress files="[com/omernaci/checkstyleexample/CheckstyleExampleApplication.java]" />
+
+    <!-- Exclude entire directory -->
+    <!-- <suppress files="[path/to/excluded/directory]/.*" /> -->
+
+    <!-- Additional exclusion rules can be added as needed -->
+</suppressions>
