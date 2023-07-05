@@ -11,4 +11,5 @@
 | Java OOP : Commonly Asked Questions — 1 | [https://medium.com/@omernaci/implementing-the-strategy-design-pattern-in-java-40a400a337dc](https://medium.com/@omernaci/java-oop-commonly-asked-questions-1-46af9d9eb4d9) | [*java-oop*](https://javapulse.github.io/studious-adventure/#-4-java-oop) |
 | Mocking Static Classes with Mockito | [https://medium.com/@omernaci/implementing-the-strategy-design-pattern-in-java-40a400a337dc](https://medium.com/@omernaci/mocking-static-classes-with-mockito-7fc6fe54d4b0) | *payment* |
 | Lazy Loading in Spring Beans | https://medium.com/@omernaci/lazy-loading-in-spring-beans-e6a9945e874d | *lazy-example* |
+| Code Quality in Spring Boot Project with Checkstyle | https://medium.com/@omernaci/code-quality-in-spring-boot-project-with-checkstyle-b7fde6536dc8 | *checkstyle-example*|
 | -- | -- | -- |
