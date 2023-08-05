@@ -79,4 +79,24 @@ these log lines show that the Camel context has started successfully, and it is 
 
 - If the condition in the `when` statement is false (i.e., the sourceLocation is not 'HighRiskCountry'), the route goes to the otherwise statement.
 
-- In the `otherwise` statement, the route continues to the `to` method, which sends the message (transaction) to the jpa component. The jpa component is used to persist the message (transaction) into the database using the Java Persistence API (JPA). 
+- In the `otherwise` statement, the route continues to the `to` method, which sends the message (transaction) to the jpa component. The jpa component is used to persist the message (transaction) into the database using the Java Persistence API (JPA).
+
+Sample CURL Requests:
+```
+curl -X POST -H "Content-Type: application/json" -d '{
+  "accountNumber": "9876543210",
+  "amount": 500.00,
+  "sourceLocation": "HighRiskCountry",
+  "paymentMethod": "CREDIT_CARD",
+  "transactionDate": "2023-08-03T10:15:30"
+}' http://localhost:8080/incomingTransactions
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "accountNumber": "1234567890",
+  "amount": 100.00,
+  "sourceLocation": "USA",
+  "paymentMethod": "CREDIT_CARD",
+  "transactionDate": "2023-08-03T10:15:30"
+}' http://localhost:8080/incomingTransactions
+
+```
