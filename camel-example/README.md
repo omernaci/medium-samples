@@ -1,8 +1,6 @@
 
 ### The [Message Filter](https://camel.apache.org/components/3.21.x/eips/filter-eip.html) from the EIP patterns allows you to filter messages.
 
-
-
 ```java
 @RestController
 public class TransactionController {
@@ -89,7 +87,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
   "sourceLocation": "HighRiskCountry",
   "paymentMethod": "CREDIT_CARD",
   "transactionDate": "2023-08-03T10:15:30"
-}' http://localhost:8080/incomingTransactions
+}' http://localhost:8080/transactions/income
 
 curl -X POST -H "Content-Type: application/json" -d '{
   "accountNumber": "1234567890",
@@ -97,6 +95,70 @@ curl -X POST -H "Content-Type: application/json" -d '{
   "sourceLocation": "USA",
   "paymentMethod": "CREDIT_CARD",
   "transactionDate": "2023-08-03T10:15:30"
-}' http://localhost:8080/incomingTransactions
+}' http://localhost:8080/transations/income
 
 ```
+
+
+----
+
+### The [Idempotent Consumer](https://camel.apache.org/components/3.21.x/eips/idempotentConsumer-eip.html) from the EIP patterns is used to filter out duplicate messages.
+
+To start Redis Stack server using the redis-stack-server image, run the following command in your terminal:
+`docker run -d --name redis-stack-server -p 6379:6379 redis/redis-stack-server:latest`
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-redis</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.apache.camel</groupId>
+    <artifactId>camel-spring-redis</artifactId>
+    <version>4.0.0-RC2</version>
+</dependency>
+```
+
+```java
+@Component
+public class DirectDebitPaymentRoute extends RouteBuilder {
+
+    private final RedisTemplate<String, String> redisTemplate;
+
+    public DirectDebitPaymentRoute(RedisTemplate<String, String> redisTemplate) {
+        this.redisTemplate = redisTemplate;
+    }
+
+    @Override
+    public void configure() {
+        RedisIdempotentRepository redisIdRepository = new RedisIdempotentRepository(redisTemplate, "processed-direct-debits");
+
+        from("direct:processDirectDebits")
+            .idempotentConsumer(header("paymentId"), redisIdRepository)
+                .skipDuplicate(false) // .skipDuplicate(true) : Skip processing of duplicate direct debit payments
+                .log("Processing direct debit payment with ID: ${header.paymentId}")
+                .process(exchange -> {
+                    String paymentId = exchange.getIn().getHeader("paymentId", String.class);
+                    boolean isDuplicate = exchange.getProperty(Exchange.DUPLICATE_MESSAGE, boolean.class);
+                    if (isDuplicate) {
+                        System.out.println("Duplicate paymentId: " + paymentId);
+                        exchange.getIn().setBody("Duplicate direct debit payment. This payment is already processed.");
+                    } else {
+                        System.out.println("Processing direct debit payment with ID: " + paymentId);
+                        exchange.getIn().setBody("Payment processed successfully.");
+                    }
+                })
+            .end();
+    }
+}
+```
+
+- The Idempotent Consumer filters out duplicate messages based on the message ID (paymentId in this case) and the idempotent repository (redisIdRepository).
+
+  - header("paymentId"): The Idempotent Consumer will use this value as the message ID for duplicate checks.
+  - redisIdRepository: This is the RedisIdempotentRepository instance that holds the set of processed direct debit payment IDs. It will be used to check whether a message with the same "paymentId" has been processed before.
+
+- `skipDuplicate(false)` : Idempotent Consumer will not skip processing duplicate direct debit payments. 
+   Instead, it will process each message, whether it is a duplicate or not. If you want to switch to duplicate records directly, you must set this property true.
+
+- `Exchange.DUPLICATE_MESSAGE` property from the Camel Exchange. The property is set by the Idempotent Consumer to indicate whether the message is a duplicate or not.
