@@ -15,4 +15,5 @@
 | Liveness, Readiness and Startup Probes | https://medium.com/@omernaci/liveness-readiness-and-startup-probes-e05d6f1c96e0 | *</>* |
 | Comparing @Controller and @RestController in Spring Framework | https://medium.com/@omernaci/comparing-controller-and-restcontroller-in-spring-framework-2c3ab688c2f5 | *</>* |
 | Filtering Messages with Apache Camel and Spring Boot | https://medium.com/@omernaci/filtering-messages-with-apache-camel-and-spring-boot-b2c01cb032a6 | *camel-example*|
+| Reliable Processing with Idempotency in Apache Camel | https://medium.com/@omernaci/reliable-processing-with-idempotency-in-apache-camel-af152c0983ec | *camel-example* |
 | -- | -- | -- |
