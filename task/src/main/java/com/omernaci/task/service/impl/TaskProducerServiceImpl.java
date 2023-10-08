@@ -16,7 +16,7 @@ public class TaskProducerServiceImpl implements TaskProducerService {
 
     @Override
     public void sendTaskStatusUpdateMessage(TaskStatusUpdateMessage message) {
-        rabbitTemplate.convertAndSend("notificationRoutingKey", message);
+        rabbitTemplate.convertAndSend("notificationExchange", "notificationRoutingKey", message);
     }
 
 }
