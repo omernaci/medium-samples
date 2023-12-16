@@ -1,0 +1,5 @@
+scrape_configs:
+  - job_name: 'camel-jmx'
+    metrics_path: '/jmx'
+    static_configs:
+      - targets: ['localhost:5555']  # JMX Exporter address
