@@ -1,4 +1,4 @@
-# medium-samples [![CodeFactor](https://www.codefactor.io/repository/github/omernaci/medium-samples/badge/master)](https://www.codefactor.io/repository/github/omernaci/medium-samples/overview/master)
+# medium-samples
 
 | Title | Medium Url | Repo
 | --- | --- | --- | 
