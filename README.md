@@ -16,4 +16,8 @@
 | Comparing @Controller and @RestController in Spring Framework | https://medium.com/@omernaci/comparing-controller-and-restcontroller-in-spring-framework-2c3ab688c2f5 | *</>* |
 | Filtering Messages with Apache Camel and Spring Boot | https://medium.com/@omernaci/filtering-messages-with-apache-camel-and-spring-boot-b2c01cb032a6 | *camel-example*|
 | Reliable Processing with Idempotency in Apache Camel | https://medium.com/@omernaci/reliable-processing-with-idempotency-in-apache-camel-af152c0983ec | *camel-example* |
+| Template Method Design Pattern in Spring Boot | https://medium.com/@omernaci/template-method-design-pattern-cc22e8421637 | *design-patterns/behavioral/template-method* |
+| State Design Pattern in Spring Boot | https://medium.com/@omernaci/state-design-pattern-812c65d3ddd3 | *design-patterns/behavioral/state* |
+| Transactional Outbox Pattern | https://medium.com/@omernaci/transactional-outbox-pattern-72ba980514bc | *outbox* |
+| Cucumber in Spring Framework | https://medium.com/@omernaci/cucumber-in-spring-framework-d1d3dd25432f | *cucumber-example* |
 | -- | -- | -- |
