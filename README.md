@@ -20,4 +20,12 @@
 | State Design Pattern in Spring Boot | https://medium.com/@omernaci/state-design-pattern-812c65d3ddd3 | *design-patterns/behavioral/state* |
 | Transactional Outbox Pattern | https://medium.com/@omernaci/transactional-outbox-pattern-72ba980514bc | *outbox* |
 | Cucumber in Spring Framework | https://medium.com/@omernaci/cucumber-in-spring-framework-d1d3dd25432f | *cucumber-example* |
+| Kafka Message Key Hashing | https://medium.com/@omernaci/kafka-message-key-hashing-a1c2a9654060 | *</>* |
+| Optimize Docker Images | https://medium.com/@omernaci/optimize-docker-images-1cab98085233 | *</>* |
+| SQL Indexing Best Practices | https://medium.com/@omernaci/sql-indexing-best-practices-c056b3577c10 | *</>* |
+| Local Kafka Environment with Docker Compose | https://medium.com/@omernaci/local-kafka-environment-with-docker-compose-ce234a775c8a | *</>* |
+| Docker Cheat Sheet | https://medium.com/@omernaci/docker-cheat-sheet-d092a725f231 | *</>* |
+| Intellij IDEA File and Code Templates | https://medium.com/@omernaci/intellij-idea-file-and-code-templates-ff3159cf523a | *</>* |
+| Entity Management with Hibernate Listeners | https://medium.com/@omernaci/entity-management-with-hibernate-listeners-6cd3a5a745ba | *hibernate-listener-example* |
+| JUnit 5 Parameterized Tests | https://medium.com/@omernaci/junit-5-parameterized-tests-790723e7fb23 | *junit-parameterized-test-example* |
 | -- | -- | -- |
