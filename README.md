@@ -28,4 +28,5 @@
 | Intellij IDEA File and Code Templates | https://medium.com/@omernaci/intellij-idea-file-and-code-templates-ff3159cf523a | *</>* |
 | Entity Management with Hibernate Listeners | https://medium.com/@omernaci/entity-management-with-hibernate-listeners-6cd3a5a745ba | *hibernate-listener-example* |
 | JUnit 5 Parameterized Tests | https://medium.com/@omernaci/junit-5-parameterized-tests-790723e7fb23 | *junit-parameterized-test-example* |
+| Spring Boot Actuator Configuration | https://medium.com/@omernaci/spring-boot-actuator-configuration-167c4cd8de18 | *</>* |
 | -- | -- | -- |
