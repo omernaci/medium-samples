@@ -29,4 +29,6 @@
 | Entity Management with Hibernate Listeners | https://medium.com/@omernaci/entity-management-with-hibernate-listeners-6cd3a5a745ba | *hibernate-listener-example* |
 | JUnit 5 Parameterized Tests | https://medium.com/@omernaci/junit-5-parameterized-tests-790723e7fb23 | *junit-parameterized-test-example* |
 | Spring Boot Actuator Configuration | https://medium.com/@omernaci/spring-boot-actuator-configuration-167c4cd8de18 | *</>* |
+| Graceful Shutdown in Kubernetes | https://medium.com/@omernaci/graceful-shutdown-in-kubernetes-bd91d247da80 | *</>* |
+| Using @ConfigurationProperties in a Spring Boot Application | https://medium.com/@omernaci/using-configurationproperties-in-a-spring-boot-application-b258242df6cf | *configuration-example* |
 | -- | -- | -- |
