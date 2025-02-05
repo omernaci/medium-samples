@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: configuration-example
+
+campaign:
+  currency: "EUR"
+  allowed-countries:
+    - "UK"
+    - "DE"
+    - "TR"
+  general:
+    max-active-campaigns: 10
+    default-duration-days: 30
+  discount:
+    max-discount-percentage: 50
+    min-order-value: 100
