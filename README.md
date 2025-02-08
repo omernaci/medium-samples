@@ -32,4 +32,6 @@
 | Graceful Shutdown in Kubernetes | https://medium.com/@omernaci/graceful-shutdown-in-kubernetes-bd91d247da80 | *</>* |
 | Using @ConfigurationProperties in a Spring Boot Application | https://medium.com/@omernaci/using-configurationproperties-in-a-spring-boot-application-b258242df6cf | *configuration-example* |
 | FIRST Principle in Unit Testing | https://medium.com/@omernaci/first-principle-in-unit-testing-0bd8669e2144 | *</>* |
+| Measure Code Coverage with JaCoCo | https://medium.com/@omernaci/measure-code-coverage-with-jacoco-4dae4ecd1ccc | *jacoco-example* |
+| Unit Testing Best Practices | https://medium.com/@omernaci/unit-testing-best-practices-cb01d1bc4864 | *</>* |
 | -- | -- | -- |
