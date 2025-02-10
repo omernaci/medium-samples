@@ -34,4 +34,5 @@
 | FIRST Principle in Unit Testing | https://medium.com/@omernaci/first-principle-in-unit-testing-0bd8669e2144 | *</>* |
 | Measure Code Coverage with JaCoCo | https://medium.com/@omernaci/measure-code-coverage-with-jacoco-4dae4ecd1ccc | *jacoco-example* |
 | Unit Testing Best Practices | https://medium.com/@omernaci/unit-testing-best-practices-cb01d1bc4864 | *</>* |
+| Top 10 Intellij IDEA Shortcuts | https://medium.com/@omernaci/top-10-intellij-idea-shortcuts-ed2d867866b9 | *</>* |
 | -- | -- | -- |
