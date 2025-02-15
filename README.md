@@ -36,4 +36,5 @@
 | Unit Testing Best Practices | https://medium.com/@omernaci/unit-testing-best-practices-cb01d1bc4864 | *</>* |
 | Top 10 Intellij IDEA Shortcuts | https://medium.com/@omernaci/top-10-intellij-idea-shortcuts-ed2d867866b9 | *</>* |
 | Quick Review of Change Data Capture | https://medium.com/@omernaci/quick-review-of-change-data-capture-412c3d9d59a8 | *cdc-query-based-example* |
+| Hibernate N+1 Problem | https://medium.com/@omernaci/hibernate-n-1-problem-fa3c407ef90d | *hibernate-example* |
 | -- | -- | -- |
