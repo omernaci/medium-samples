@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: apigateway
+  cloud:
+    gateway:
+      routes:
+        - id: ambassador-service
+          uri: lb://ambassador-service
+          predicates:
+            - Path=/ambassador/**
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
