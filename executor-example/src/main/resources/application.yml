@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: executor-example
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+server:
+  port: 8080
